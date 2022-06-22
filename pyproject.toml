@@ -1,0 +1,26 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "DroidZed", email = ""},
+]
+dependencies = [
+    "uvicorn>=0.17.6",
+    "fastapi>=0.78.0",
+    "motor>=3.0.0",
+    "strawberry-graphql[fastapi]>=0.114.3",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=22.3.0",
+]
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
